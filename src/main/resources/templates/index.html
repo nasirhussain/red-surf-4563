@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
+
+<body>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/ocrws-p2.jpeg">
+    </a>
+    <h1>OCRWS PHASE II Services Jaipur</h1>
+    
+    <p>Click on the below buttons to use the services.</p>
+    <div class="water-1" style="padding: 10px;">
+    	<a type="button" class="btn btn-lg btn-default btn-row" href="/check"><span class="glyphicon glyphicon-flash"></span> Check your UG water supply</a>
+    </div>
+	<div class="btn btn-lg btn-default btn-row" style="padding: 2px;">
+	   	<span style="cursor: text; display: block;"> List of villas / plots for UG water supply </span>
+		<span>
+			<a type="button" class="btn btn-lg btn-default" href="/water?dateInput=1" style="margin-right: 5px;"><span class="glyphicon glyphicon-flash"></span>Today</a>
+			<a type="button" class="btn btn-lg btn-default" href="/water"><span class="glyphicon glyphicon-flash"></span>Tomorrow</a>
+		</span>
+   	</div>
+   	<div class="water-1" style="padding: 10px;">
+    	<a type="button" class="btn btn-lg btn-default btn-row" href="/overdue" style="color: red;">
+    		<span class="glyphicon glyphicon-flash"></span> 
+    		Today Overdue UG water supply
+    	</a>
+    </div>
+    <div class="water-1" style="padding: 2px;">
+    	<a type="button" class="btn btn-lg btn-default btn-row" href="/water-overhead"><span class="glyphicon glyphicon-flash"></span> Overhead water supply list</a>
+    </div>
+    <div class="water-1" style="padding: 10px;">
+    	<a type="button" class="btn btn-lg btn-default btn-row" href="/check-water-report"><span class="glyphicon glyphicon-flash"></span> UG water supply report</a>
+    </div>
+    <!--  <div class="water-1" style="padding: 2px;">
+    	<a type="button" class="btn btn-lg btn-default btn-row" href="/security"><span class="glyphicon glyphicon-flash"></span> Security contribution</a>
+    </div>
+    <div class="water-1" style="padding: 10px;">
+    	<a type="button" class="btn btn-lg btn-default btn-row" href="/security-due" style="color: red;">
+    		<span class="glyphicon glyphicon-flash"></span> 
+    		Security contribution Dues
+    	</a>
+    </div>-->
+  </div>
+</div>
+
+</body>
+</html>

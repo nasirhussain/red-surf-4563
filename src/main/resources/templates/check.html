@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'check')}">
+<body>
+  <div class="container">
+  	<div class="row">
+		<div class="span12 col-md-12">
+  			<h3>Check your UG Water Supply dates</h3>
+			<form method="get" name="chk" action="/dates">
+			  	<div>
+				  	<span>Enter your villa / plot no. </span>
+				  	<span><input type="text" name="plot" id="plot" value="" /></span>
+			  	</div>
+			    <div>
+			    	<input type="submit" />
+			    </div>
+   			</form>
+   		</div>
+   	</div>
+  </div>
+</body>
+</html>

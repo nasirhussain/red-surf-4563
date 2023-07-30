@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'check-water-report')}">
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span12 col-md-12">
+				<h3>UG Water Supply report</h3>
+				<form method="get" name="chk-water" action="/water-report">
+					<div class="input-group">
+  						<input type="text" class="form-control" id="dateInput" name="dateInput" readonly />
+					</div>
+					<div class="input-group">
+  						<input type="submit" class="form-control" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
