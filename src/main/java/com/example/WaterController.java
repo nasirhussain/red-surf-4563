@@ -356,7 +356,7 @@ public class WaterController {
         						 date = date.plusDays(1);
         					 }
         					 villaWaterDates.setNextDate(date);
-        				 } else if(villaWaterDates.getPlotOrVillaNo().equals("1395") || villaWaterDates.getPlotOrVillaNo().equals("1440") || villaWaterDates.getPlotOrVillaNo().equals("2455") || villaWaterDates.getPlotOrVillaNo().equals("2495") || villaWaterDates.getPlotOrVillaNo().equals("2490") || villaWaterDates.getPlotOrVillaNo().equals("1385")) {
+        				 } else if(villaWaterDates.getPlotOrVillaNo().equals("1440") || villaWaterDates.getPlotOrVillaNo().equals("2455") || villaWaterDates.getPlotOrVillaNo().equals("1385A")) {
         					// need water every 5th day
         					 villaWaterDates.setNextDate(excelDate.plusDays(4));
         				 } else {
