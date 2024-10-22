@@ -153,7 +153,7 @@ public class WaterController {
 		if(dateInput.length() >= 8) {
 			date = getDate(dateInput, DATE_FORMATTER_UG);
 			LocalDate start =  LocalDate.now().plusDays(1);
-			LocalDate end =  LocalDate.now().plusDays(3);
+			LocalDate end =  LocalDate.now().plusDays(4);
 			if(!(date.isAfter(start) && date.isBefore(end))) {
 				date =  LocalDate.now().plusDays(1);
 			}
